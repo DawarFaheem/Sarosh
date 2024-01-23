@@ -1,0 +1,200 @@
+Class 1:
+
+Step 1: Install Node Js(from web)
+Step 2:	npm install --global surge (Install Surge)
+Step 3: surge path link.surge.sh 
+Step 4: surge token
+Step 5:
+name: 
+Bootcamp2020
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Deploying to surge
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 12
+      - name: Install Surge
+        run: npm install -g surge
+      - name: Deploying via surge
+        run: surge ./ malicious-twist.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+
+_________________________________________________________THE END_____________________________________________________________
+Class 2:
+
+React:
+What Is ReAct, and it's Components?
+ReAct is A Library in Javascript.
+It has 60% Share In FreeLancing MarketPlace.
+
+It help us to Deploy Changes On Already Launched Website. It
+is Uni Directional.
+
+
+Process:
+   npm install --global create-react-app
+
+Step 1: npm create-react-app projectname(It will Require To Install create-React-app first)/
+	npx install --global create-react-app projectname(It will directly create A Folder for your project without
+	 installing create-react-app")
+
+Step 2: npm/yarn start (to start the created project on browser)
+	
+Step 3:	npm install --global yarn (install Yarn Seperately, if not installed
+Step 4:	yarn build (it has 2 version, Developmer Version And Production Version)
+Step 5:	surge ./build (to deploy it via surge)
+Step 6:	Publish It On GitHub
+Step 7: surge token
+name: Deploy Website
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Deploying to surge
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: Install Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 12
+      - name: Prepare for Yarn Installation
+        uses: Borales/actions-yarn@v2.1.0
+        with:
+          cmd: install #npm install/yarn install
+      - name: Creating build
+        run: yarn build
+      - name: Installing Surge
+        run: npm install -g surge
+      - name: Deploying via surge
+        run: surge ./build http://crabby.peace.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+
+_________________________________________________________THE END_____________________________________________________________
+Class 3:
+
+Studied By Slides Till "Setup of React"
+
+Step 1: npx/npm create-react-app project1
+Step 2: npm/yarn start
+Step 3: yarn/npm build
+Step 4: surge ./build
+Step 5:
+name: Deploy Website
+
+on: [push]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        name: Deploying to surge
+        steps:
+            - uses: actions/checkout@v2
+        
+            - name: Install Node.js
+              uses: actions/setup-node@v2-beta
+              with:
+                node-version: 12
+            - name: Prepare for Yarn Installation
+              uses: Borales/actions-yarn@v2.1.0
+              with:
+                cmd: install 
+            - name: Creating build
+              run: npm build
+            - name: Installing Surge
+              run: npm install -g surge
+            - name: Deploying via surge
+              run: surge ./build literate-rock.surge.sh --token ${{ secrets.SURGE_TOKEN }} 
+
+_________________________________________________________THE END_____________________________________________________________
+Class 4:
+-)
+-) 
+
+_________________________________________________________THE END_____________________________________________________________
+Class 5:
+-)
+-) 
+
+_________________________________________________________THE END_____________________________________________________________
+Class 6:
+-)
+-)
+
+Project 1:
+Surge Link: http://expense-tracking-application-by-sarosh-faheem.surge.sh/
+
+_________________________________________________________THE END_____________________________________________________________
+Class 7:
+
+-) Javascript is a Syncronising Programing 
+-) Learn About function within Function
+-) Learn about syncronise files and Callback Function, Async And Try and Catch.
+
+_________________________________________________________THE END_____________________________________________________________
+Class 8:
+
+-) API implementation
+-) Learn About useEffect and Fetch and Post of API
+
+_________________________________________________________THE END_____________________________________________________________
+Class 9:
+
+-> MaterialUI (www.material-ui.com/)
+
+Run Commands via Terminal on Root Directory: 
+1) npm install @material-ui/core
+2) npm install @material-ui/icons
+
+-) After Installations See the Following contents added
+the package.json files
+
+"@material-ui/core": "^4.11.0",
+"@material-ui/icons": "^4.9.1",
+
+And Copy the Link and Past it into public/index.html
+-) <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+-) <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+-> Chart.js ('chart.js' website)
+run Command On CMD:
+-) npm install --save react-chartjs-2 chart.js
+
+After Installations See the Following contents added
+the package.json files
+
+"chart.js": "^2.9.3",
+"react-chartjs-2": "^2.9.0",
+
+_________________________________________________________THE END_____________________________________________________________
+Class 10:
+-Corona Tracker App.
+-Install Material UI And Chart.Js in Project File.
+- API (https://thevirustracker.com/api)
+
+-> How can we create an API?
+
+_________________________________________________________THE END_____________________________________________________________
+Class 11:
+-) Installing "React Router V6" And "Web Animation API"
+
+Commands on CMD:
+-> npm install react-router-dom
+
+For Guidline: Link : https://reactrouter.com/
+
+-Create "Shoes Store" Demo Project
+-) to install router 6.0.0(beta) version (yarn add react-router-dom@6
+                                          yarn add history@5
+                                          react-router-dom@6)
+_________________________________________________________THE END_____________________________________________________________
+Class 12:
+React-API Animation Website
+WEB Animation: Link-> (https://web-animations.github.io/web-animations-demos/#phone/)                          
